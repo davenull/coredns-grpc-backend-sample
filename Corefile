@@ -1,3 +1,9 @@
-example.com.:1053 {
+. {
+    forward . 1.1.1.1 {
+        except civo.internal
+    }
+}
+
+civo.internal {
     grpc . 127.0.0.1:8053    
 }
