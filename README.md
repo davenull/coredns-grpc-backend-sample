@@ -7,7 +7,7 @@ is updated:
 
 ```
 cd proto
-protoc dns.proto --go_out=plugins=grpc:.
+protoc dns.proto --go-grpc_out=.
 ```
 
 #### Run the server
