@@ -1,6 +1,3 @@
 example.com.:1053 {
-    proxy . 127.0.0.1:8053 {
-        protocol grpc insecure
-    }
-    log
+    grpc . 127.0.0.1:8053    
 }
